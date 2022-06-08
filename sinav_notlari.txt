@@ -1,0 +1,4 @@
+Görkem Yılmaz:100,100,100
+Ezgi Özkan:10,15,20
+Esra Özkan:5,10,15
+Alpin Alkan:100,90,95

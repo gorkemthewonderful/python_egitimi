@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #header {
+            font-size: 90px; 
+            color: red;
+        }
+
+        .course {
+            color: blue
+        }
+
+        .course h2 {
+            color: green
+        }
+
+        .course.angular{
+            background-color: yellow;
+        }
+
+        #username{
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        input{
+            padding: 30px;
+            
+        }
+        input[type= "text"]{
+            padding: 40px;
+        }
+        input[type= "password"]{
+            padding: 20px;
+        }
+        #submit {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <h1 id="header">Kurslar</h1>
+        <hr>
+        <div class="course python">
+            <h2>Python Kursu</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum animi esse impedit debitis praesentium beatae id illo expedita voluptatibus, nam voluptas cumque quis, hic culpa quam dicta enim aspernatur. Temporibus?</p>
+        </div>
+        <div class="course angular">
+            <h2>Angular Kursu</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum animi esse impedit debitis praesentium beatae id illo expedita voluptatibus, nam voluptas cumque quis, hic culpa quam dicta enim aspernatur. Temporibus?</p>
+        </div>
+        <div class="course javascript">
+            <h2>Javascript Kursu</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum animi esse impedit debitis praesentium beatae id illo expedita voluptatibus, nam voluptas cumque quis, hic culpa quam dicta enim aspernatur. Temporibus?</p>
+        </div>
+
+        <div>
+            <form> 
+                Username: <input type="text" name="username" id="username"><br>
+                Password: <input type="password" name="password" id="password"><br>
+                <input type="submit" value="Login" id="submit">
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+<!-- px'i birleşik yazmalıyız. -->
+<!-- # ile id etiketlerinde, . ile de  aynı isme sahip classlarda (kapsayıcı metin) ortak olarak styling yapabiliriz. -->
+<!-- .course lardaki h2 lerde değişiklik yapmak için (style'da) course'un yanına seriden h2 yazdık. -->
+<!-- angular adlı course'u belirtmek için ise .course.angular yazdık. yani x y isimli bir classı akstetmek istiyorsak .x.y diye yazarız. (arada boşluk olmadan )-->
+<!-- padding büyütmeye yarıyor kutucuğu -->
+<!-- ". classa göre, # id'ye göre işlem yapar. dolayısıyla inputte styling yaptığımızda . ya da # kullanmamıza gerek yok.-->
+<!-- username paddingini username id'siyle verdiğimiz için alttaki input stylingini ezdi. yani daha spesifik verilmiş tariflerin önceliği var sanırım genel verilmişlere göre. yani burada username kutucuğu 10px kalmaya devam etti.-->
+<!-- type'lara ulaşmak istediğimizde ise köşeli parantez [] kullanırız.-->
